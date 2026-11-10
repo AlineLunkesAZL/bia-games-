@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jogos do BIA</title>
+<style>
+:root{--bg:#07090f;--card:#10141f;--line:#232b3d;--fg:#eef1f7;--muted:#8b96ab;--a:#ff3b5c;--b:#ff8a3d;--c:#4fd6c9;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,1.3vw,22px);padding:clamp(16px,4vw,56px) max(16px,4vw)}
+main{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{margin:0;font-size:clamp(30px,4vw,64px);line-height:1;letter-spacing:-.02em}
+h1 span{color:var(--c)}
+p{margin:0;color:var(--muted);line-height:1.5;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+a.g{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);border-top:6px solid var(--k);padding:24px;min-height:220px}
+a.g:hover,a.g:focus-visible{border-color:var(--k);outline:none}
+a.g small{font-size:.75em;letter-spacing:.14em;text-transform:uppercase;color:var(--k);font-weight:700}
+a.g b{font-size:1.6em;line-height:1.1}
+a.g span{color:var(--muted);font-size:.9em;line-height:1.4}
+a.g em{margin-top:auto;font-style:normal;font-weight:700;color:var(--k)}
+.tip{border-left:3px solid var(--c);padding-left:14px}
+footer{color:var(--muted);font-size:.8em}
+@media (max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>Jogos do <span>BIA</span></h1>
+    <p style="margin-top:10px">Bacharelado em Inteligência Artificial · UNIPAMPA Alegrete. Os três jogos funcionam sem internet.</p>
+  </div>
+  <div class="grid">
+    <a class="g" href="1-videogame-chefao-neural.html" style="--k:var(--a)"><small>Videogame</small><b>Chefão Neural</b><span>Pedra, papel e tesoura contra uma IA que aprende os padrões da turma ao vivo. Modo Time A × Time B.</span><em>Jogar ▸</em></a>
+    <a class="g" href="2-musica-jam-com-a-ia.html" style="--k:var(--b)"><small>Música</small><b>Jam com a IA</b><span>A turma cria um riff e a IA continua. Depois, o desafio: Humano ou IA?</span><em>Jogar ▸</em></a>
+    <a class="g" href="3-artes-detetive-de-prompt.html" style="--k:var(--c)"><small>Artes</small><b>Detetive de Prompt</b><span>Descubram qual prompt gerou cada quadro pintado pela IA. E o papo sobre deepfakes.</span><em>Jogar ▸</em></a>
+  </div>
+  <p class="tip">Dica para o telão: dentro do jogo, aperte <b>F11</b> para tela cheia. Para voltar a este menu, use <b>Alt + ←</b> (voltar do navegador).</p>
+  <footer>bia-unipampa.github.io · @bia.unipampa</footer>
+</main>
+</body>
+</html>
